@@ -1,0 +1,422 @@
+
+
+html {
+  background-color: #272727;
+}
+
+/********* HEADER *******************/
+
+/*Navbar */
+
+.nav-link{
+  color: white;
+  font-size: 17px;
+}
+
+.navBar{
+  background-color: #272727;
+  color: white;
+  margin-bottom: 0% !important;
+}
+
+.navbar-brand{
+  font-family: 'Permanent Marker', sans-serif;
+  color: white !important;
+  font-size: 30px !important;
+}
+
+.nav-link:hover {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.nav-link:active, .nav-link:focus{
+  background-color: transparent !important;
+}
+
+.accountLinks{
+  margin-left: 78%;
+}
+
+/********* HOME *******************/
+
+/*Content */
+
+.cover-container {
+  width: 100%;
+  text-align: center;
+}
+
+.slogan {
+  color: white;
+  font-size: 40px;
+  margin-top: 40%;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.title1Home{
+  font-size: 40px !important;
+}
+
+.titleHome2{
+  font-size: 40px !important;
+  padding-top: 2%;
+}
+
+.sagaSection{
+  font-size: 40px;
+  max-width: 100%;
+  background-color: #272727 !important;
+  color: white !important;
+  margin-top: 15%;
+}
+
+.footer{
+  color: white !important;
+}
+
+/****** SIGN IN AND SIGN UP FORMS ******/
+
+.signForms{
+  max-width: 600px;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 92px;
+}
+
+.signForms .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.signInForm, .signUpForm{
+  background-color: #272727;
+  min-width: 100%;
+  color: white;
+}
+
+/******** GOOGLE MAP *******/
+
+.googleMap > div{
+  height : 500px;
+  width: 500px;
+}
+
+.mapAllLocations > div{
+  height: 550px;
+  width: 700px;
+  margin-left: 5%;
+}
+
+.iframe-container{
+    position: relative;
+    width: 80%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    width: 100%;
+}
+
+/******* GLOBAL ********/
+
+.error{
+  color: red;
+}
+
+/*CHECK!!!!!!!!!!!!!!!!!*/
+
+/********* USER HOME **********/
+
+.userHome,.welcomeSection, .addSagaSection, .sagaDetailSection, .sagasAroundWorld{
+  background-color: #272727 !important;
+  color: white !important;
+}
+
+.welcomeSection{
+  margin-top: 8%;
+}
+
+.sagaThumbnailSection{
+  padding-bottom: 10%;
+}
+
+.thumbnail > a{
+  color: black !important;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 1%;
+}
+
+/***** FORM TO ADD SAGA *******/
+
+.headingSagaTellingSpace{
+  font-size: 60px;
+  margin-top: 8%;
+  margin-bottom: 1%;
+  margin-left: -21%;
+}
+
+.row{
+  padding-top: 5%;
+}
+
+.form-group{
+  width:45%;
+}
+
+.topInput{
+  margin-top: 10%;
+}
+
+.alertAddForm{
+  margin-left: -29%;
+  margin-right: 15%;
+}
+
+.sagaContainer{
+  margin-top: 8%;
+}
+
+.editBtn{
+  margin-left: 10%;
+}
+
+.buttonSection{
+  margin-bottom: 5%;
+}
+
+.storyText{
+  font-size: 20px;
+  margin-top: -6%;
+}
+
+.headingSagaDetail{
+  font-size: 60px;
+  margin-right:5%;
+}
+
+/*.mapInSagaDetails{
+  margin-left: 15%;
+}*/
+
+
+
+/****** MEDIA QUERIES ******/
+
+/*HOME*/
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+
+  .slogan{
+    font-size: 25px !important;
+    margin-top: 137%;
+    /*text-align: center;*/*/
+  }
+
+  .title1Home{
+    margin-top: 2%;
+    font-size: 25px !important;
+
+  }
+
+  .titleHome2{
+    font-size: 30px !important;
+  }
+
+  .sagaSection {
+    margin-top: 10% !important;
+  }
+
+  /*USER HOME*/
+
+  .welcomeSection{
+    margin-top: 30%;
+  }
+
+  /*ADD SAGA*/
+
+  .headingSagaTellingSpace{
+    margin-top: 57%;
+    margin-left: 1%;
+    /*font-size: 40px;*/
+  }
+
+  .addSagaForm{
+    margin-left: 6%;
+  }
+
+  .form-group{
+    width: 70%;
+  }
+
+
+  /*SAGA DETAILS*/
+
+  .sagaContainer{
+    margin-top: 20%;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .slogan{
+    font-size: 30px !important;
+    margin-top: 120%;
+    /*text-align: center;*/*/
+  }
+
+  .title1Home{
+    margin-top: 2%;
+    font-size: 25px !important;
+
+  }
+
+  .titleHome2{
+    font-size: 30px !important;
+  }
+
+  .sagaSection {
+    margin-top: 10% !important;
+  }
+
+  /*USER HOME*/
+
+  .welcomeSection{
+    margin-top: 30%;
+  }
+
+  /*ADD SAGA*/
+
+  .headingSagaTellingSpace{
+    margin-top: 57%;
+    margin-left: 1%;
+    /*font-size: 40px;*/
+  }
+
+  .addSagaForm{
+    margin-left: 6%;
+  }
+
+  .form-group{
+    width: 70%;
+  }
+
+  /*SAGA DETAILS*/
+
+  .sagaContainer{
+    margin-top: 30%;
+  }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 677px){
+  .slogan{
+    font-size: 40px !important;
+    margin-top: 100%;
+    /*text-align: center;*/*/
+  }
+
+  .title1Home{
+    margin-top: 2%;
+    font-size: 25px !important;
+
+  }
+
+  .titleHome2{
+    font-size: 30px !important;
+  }
+
+  .sagaSection {
+    margin-top: 10% !important;
+  }
+
+  /*USER HOME*/
+
+  .welcomeSection{
+    margin-top: 30%;
+  }
+
+  /*ADD SAGA*/
+
+  .headingSagaTellingSpace{
+    margin-top: 57%;
+  }
+
+  /*SAGA DETAILS*/
+
+  .sagaContainer{
+    margin-top: 30%;
+  }
+}
+
+@media screen and (min-width: 678px) and (max-width: 1266px){
+  .slogan{
+    font-size: 40px !important;
+    margin-top: 50%;
+    /*text-align: center;*/*/
+  }
+
+  .title1Home{
+    margin-top: 2%;
+    font-size: 25px !important;
+
+  }
+
+  .titleHome2{
+    font-size: 30px !important;
+  }
+
+  .sagaSection {
+    margin-top: 10% !important;
+  }
+
+  /*USER HOME*/
+
+  .welcomeSection{
+    margin-top: 15%;
+  }
+
+  /*ADD SAGA*/
+
+  .headingSagaTellingSpace{
+    margin-top: 20%;
+    margin-left: 5%;
+  }
+
+  .addSagaForm{
+    margin-left: 6%;
+  }
+
+  /*SAGA DETAILS*/
+
+  .sagaContainer{
+    margin-top: 15%;
+  }
+
+}
+
+/*ADD SAGA*/
+
+@media (min-width:0px) and (max-width: 350px){
+  .headingSagaTellingSpace{
+    margin-top: 70%;
+  }
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
