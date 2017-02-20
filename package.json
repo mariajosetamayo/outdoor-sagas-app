@@ -23,7 +23,7 @@
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
-    "webpack": "^1.12.9",
+  c
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
@@ -47,6 +47,7 @@
     "redux-thunk": "^2.2.0",
     "simple-date": "^1.1.1",
     "superagent": "^3.4.1",
+        "webpack-dev-server": "^1.14.0",
         "webpack-dev-server": "^1.14.0"
   }
 }
