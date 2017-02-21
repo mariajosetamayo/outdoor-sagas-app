@@ -2,7 +2,7 @@ import React , {Component} from 'react';
 import {connect} from 'react-redux';
 import {Link} from 'react-router';
 
-import Navbar from 'react-bootstrap/lib/navbar'
+// import Navbar from 'react-bootstrap/lib/navbar'
 import * as actions from '../actions/index';
 
 class Header extends Component {
