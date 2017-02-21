@@ -18,7 +18,7 @@ import {
 } from './types';
 
 
-const ROOT_URL = 'https://intense-sierra-84065.herokuapp.com/';
+const ROOT_URL = 'https://intense-sierra-84065.herokuapp.com';
 
 export function signinUser({email, password}){
   return function (dispatch){
