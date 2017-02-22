@@ -1,25 +1,32 @@
-# ReduxSimpleStarter
+# Outdoor Sagas
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+##Summary
+
+Outdoor Sagas is a full-stack app that allows users to record, share, and save your adventure memories all in one place.
+
+###Live view###
+
+https://outdoor-sagas.herokuapp.com/
 
 ###Getting Started###
 
-There are two methods for getting started with this repo.
+Outdoor Sagas is divided into two repos: the app repo and the server repo. This is the app repo, which contains the front-end
+of the application. To start the backend of the application, please got to: https://github.com/mariajosetamayo/outdoor-sagas-server
 
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
+####Getting started with the app package#####
 
 ```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
+	> git clone git@github.com:mariajosetamayo/outdoorSagas.git
+	> cd app
 	> npm install
 	> npm start
 ```
 
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+##Technology used
 
-```
-	> npm install
-	> npm start
-```
+- Outdoor Sagas is built using the MEAN stack.
+- The front-end is built using React.
+- The back-end is built using NodeJS, ExpressJS, and MongoDB for the database.
+- Libraries used include: Bootstrap and Mongoose.
+- Authentication is made using Passport.
+- Outdoor Sagas uses the Google Maps API for acquiring geolocations and generating maps.
