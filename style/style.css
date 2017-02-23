@@ -2,6 +2,14 @@
 
 html {
   background-color: #272727;
+  height: 100%;
+  width: 100%;
+
+}
+
+body{
+  text-align: center;
+  font-family: 'Muli', sans-serif !important;
 }
 
 /********* HEADER *******************/
@@ -50,12 +58,14 @@ html {
 .slogan {
   color: white;
   font-size: 40px;
-  margin-top: 40%;
-  text-shadow: 2px 2px 4px #000000;
+  margin-top: 10%;
+  text-shadow: 3px 3px 4px #000000;
+  font-weight: bold;
 }
 
 .title1Home{
   font-size: 40px !important;
+  padding-left: 2%;
 }
 
 .titleHome2{
@@ -68,7 +78,23 @@ html {
   max-width: 100%;
   background-color: #272727 !important;
   color: white !important;
-  margin-top: 15%;
+  margin-top: 47%;
+}
+
+.thumbnail{
+  width: 300px;
+  height: 270px;
+  background-color: #E1E1E1 !important;
+}
+
+.thumbnail a>img{
+  height: 70% !important;
+  width: 100%;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.sagaThumnailsContainer{
+  margin-top: -7%;
 }
 
 .footer{
@@ -110,13 +136,14 @@ html {
 .mapAllLocations > div{
   height: 550px;
   width: 700px;
-  margin-left: 5%;
+  margin-left: 7%;
 }
 
 .iframe-container{
     position: relative;
     width: 80%;
     padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+    margin-left: 9%;
 }
 .iframe-container > *{
     display: block;
@@ -129,6 +156,10 @@ html {
     padding: 0;
     height: 80%;
     width: 100%;
+}
+
+.mapSagaDetail{
+  margin-left: 10%;
 }
 
 /******* GLOBAL ********/
@@ -213,6 +244,9 @@ html {
   margin-left: 15%;
 }*/
 
+/*.sagaImage{
+  margin-left: 15%;
+}*/
 
 
 /****** MEDIA QUERIES ******/
@@ -221,10 +255,13 @@ html {
 
 @media screen and (max-width: 320px) {
   /* comes into effect for screens less than or equal to 320 pixels */
+  .coverPhoto{
+    height: 75% !important;
+  }
 
   .slogan{
-    font-size: 25px !important;
-    margin-top: 137%;
+    font-size: 15px !important;
+    margin-top: 91%;
     /*text-align: center;*/*/
   }
 
@@ -242,6 +279,11 @@ html {
     margin-top: 10% !important;
   }
 
+  .sagaThumnailsContainer{
+    margin-left: -20% !important;
+    margin-top: -26% !important;
+  }
+
   /*USER HOME*/
 
   .welcomeSection{
@@ -251,9 +293,9 @@ html {
   /*ADD SAGA*/
 
   .headingSagaTellingSpace{
-    margin-top: 57%;
+    margin-top: 70%;
     margin-left: 1%;
-    /*font-size: 40px;*/
+    font-size: 50px;
   }
 
   .addSagaForm{
@@ -268,13 +310,20 @@ html {
   /*SAGA DETAILS*/
 
   .sagaContainer{
-    margin-top: 20%;
+    margin-top: 50%;
+    font-size: 17px;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
+
+  .coverPhoto{
+    height: 90% !important;
+    /*background-size: contain !important;*/
+  }
+
   .slogan{
-    font-size: 30px !important;
-    margin-top: 120%;
+    font-size: 18px !important;
+    margin-top: 92% !important;
     /*text-align: center;*/*/
   }
 
@@ -289,7 +338,7 @@ html {
   }
 
   .sagaSection {
-    margin-top: 10% !important;
+    margin-top: 22% !important;
   }
 
   /*USER HOME*/
@@ -301,7 +350,7 @@ html {
   /*ADD SAGA*/
 
   .headingSagaTellingSpace{
-    margin-top: 57%;
+    margin-top: 60%;
     margin-left: 1%;
     /*font-size: 40px;*/
   }
@@ -317,15 +366,24 @@ html {
   /*SAGA DETAILS*/
 
   .sagaContainer{
-    margin-top: 30%;
+    margin-top: 40%;
   }
+
+  /*.sagaDetailSection{
+    padding-top: 30% !important;
+  }*/
 }
 
 
-@media screen and (min-width: 481px) and (max-width: 677px){
+@media screen and (min-width: 481px) and (max-width: 768px){
+
+  .coverPhoto{
+    height: 90% !important;
+  }
+
   .slogan{
-    font-size: 40px !important;
-    margin-top: 100%;
+    font-size: 20px ;
+    margin-top: 60% ;
     /*text-align: center;*/*/
   }
 
@@ -362,10 +420,31 @@ html {
   }
 }
 
-@media screen and (min-width: 678px) and (max-width: 1266px){
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+  .coverPhoto{
+    height: 110% !important;
+  }
+
   .slogan{
-    font-size: 40px !important;
-    margin-top: 50%;
+    font-size: 30px ;
+    margin-top: 20% ;
+    /*text-align: center;*/*/
+  }
+
+  .sagaSection {
+    margin-top: 60% !important;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1266px){
+
+  .coverPhoto{
+    height: 100% !important;
+  }
+  .slogan{
+    font-size: 35px !important;
+    margin-top: 40% !important;
     /*text-align: center;*/*/
   }
 
@@ -380,7 +459,7 @@ html {
   }
 
   .sagaSection {
-    margin-top: 10% !important;
+    margin-top: 50% !important;
   }
 
   /*USER HOME*/
@@ -408,11 +487,29 @@ html {
 
 }
 
+/*@media screen and (min-width: 678px) and (max-width: 1266px){
+  .slogan{
+    font-size: 35px !important;
+    margin-top: 70%;
+    /*text-align: center;*/*/
+  }*/
+
 /*ADD SAGA*/
 
-@media (min-width:0px) and (max-width: 350px){
+/*@media screen and (max-width: 350px){
   .headingSagaTellingSpace{
-    margin-top: 70%;
+    /*margin-top: 95% !important;*/
+    /*font-size: 30px !important;
+  }
+  .sagaTellingCol{
+    margin-top: 18% !important;
+  }
+}*/*/
+
+@media (min-width:351px) and (max-width: 850px){
+  .headingSagaTellingSpace{
+    /*margin-top: 90% !important;*/
+    font-size: 50px !important;
   }
 }
 

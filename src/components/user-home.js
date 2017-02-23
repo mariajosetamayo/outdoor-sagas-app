@@ -45,7 +45,7 @@ class UserHome extends Component{
           <div className="row-fluid featurette sagasAroundWorld">
             <h1 className="text-center"> Your sagas around the world</h1>
             <br/>
-            <div className="col-xs-12 col-md-12 sagaThumbnailSection">
+            <div className="col-xs-12 col-md-12">
               <SagaList correctSagas={this.props.sf} authenticated={this.props.authenticated} />
             </div>
           </div>

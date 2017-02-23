@@ -16,7 +16,9 @@ export default class SagaList extends Component {
       display: 'inline-block',
       float: 'none',
       fontSize: '20px',
-      color: 'black'
+      color: 'black',
+      fontWeight: 'bold',
+      textShadow: '1px 1px 1px #000000',
     }
 
       return this.props.correctSagas.map((saga, index) =>{
@@ -54,7 +56,7 @@ export default class SagaList extends Component {
         {this.renderTitleForSagas()}
         <br/>
         <br/>
-        <div className="container">
+        <div className="container sagaThumnailsContainer">
           <div className="row">
             <div className="col-xs-12 col-md-12">
               {this.renderSagaThumbnails()}

@@ -31,22 +31,22 @@ export default class SagaDetail extends Component {
           <h1 className="headingSagaDetail text-center">{this.props.selectedSaga.title}</h1>
           <br/>
           <Row>
-            <Col xs={8} sm={8} md={8} className="col-xs-offset-2 col-lg-offset-3">
-              <Image className="img-responsive" src={'https://s3-us-west-1.amazonaws.com/outdoor-sagas3/'+ this.props.selectedSaga.imageName} width='654px' height="408px" rounded />
+            <Col xs={8} sm={8} md={8} lg={12} className="col-xs-offset-2 col-lg-offset-3">
+              <Image className="img-responsive vertical-center" src={'https://s3-us-west-1.amazonaws.com/outdoor-sagas3/'+ this.props.selectedSaga.imageName} width='654px' height="408px" rounded />
             </Col>
           </Row>
           <br/>
           <Row>
-            <Col xs={8} sm={8} md={8} className="col-xs-offset-2 col-lg-offset-3">
+            <Col xs={8} sm={8} md={8} className="col-xs-offset-2 col-lg-offset-2">
               <h3>This saga happened on {moment.parseZone(this.props.selectedSaga.date).format('dddd, MMMM Do, YYYY')} with {this.props.selectedSaga.people} in:</h3>
               <br/>
-                <div className= "mapAllLocations" className="iframe-container vertical-center">
+                <div className= "mapAllLocations" className="iframe-container mapSagaDetail vertical-center">
                   <GoogleMapAllLocations correctSagas={[this.props.selectedSaga]} center= {{lat:this.props.selectedSaga.location.lat, lng: this.props.selectedSaga.location.lng}} />
                 </div>
             </Col>
           </Row>
           <Row>
-            <Col xs={8} md={8} lg={8} className="col-xs-offset-2 col-lg-offset-3">
+            <Col xs={8} md={8} lg={8} className="col-xs-offset-2 col-lg-offset-2">
               <div className="storyText">{this.props.story}</div>
             </Col>
           </Row>

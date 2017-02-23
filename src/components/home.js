@@ -23,24 +23,17 @@ import Footer from '../components/footer';
 
    render (){
     var sectionStyle = {
-      height: '100%',
-      // minWidth: '100%',
+      height: '130%',
       position: 'absolute',
       width: '100%',
-      // height:'auto',
-      // maxHeight: '1300px',
       backgroundImage: "url('./images/cover4.jpg')",
-      // backgroundSize: size,
       backgroundSize: 'cover',
       backgroundPosition: '60% 60%',
-      // backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
-      // overflowX: 'hidden',
-      // marginTop: '-1.7%',
     };
 
      return (
-        <div className="site-wrapper responsive-image" style={sectionStyle}>
+        <div className="site-wrapper responsive-image coverPhoto" style={sectionStyle}>
           <div className="site-wrapper-inner">
             <div className="cover-container" >
               <div className="inner cover">
@@ -53,7 +46,7 @@ import Footer from '../components/footer';
                 <hr className="featurette-divider"  />
                 <div className="row featurette">
                   <h1 className="title1Home featurette-heading text-center" > Join a global community of outdoor lovers who share their adventures every day</h1>
-                  <div className="col-xs-12 col-md-12 ">
+                  <div className="col-xs-12 col-md-12">
                     <br/>
                   <div><SagaList correctSagas={this.props.sagas}/></div>
                 </div>

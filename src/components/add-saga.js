@@ -95,14 +95,14 @@ class NewSagaForm extends Component {
     return (
       <div className="jumbotron addSagaSection">
         <Row>
-          <Col xs={6} md={8} className="col-md-offset-3 col-lg-offset-3">
+          <Col xs={6} md={8} className="col-sm-offset-3 col-md-offset-3 col-lg-offset-3 sagaTellingCol">
             <h1 className="headingSagaTellingSpace text-center">Saga telling space</h1>
             <br/>
             <br/>
           </Col>
         </Row>
           <Row>
-            <Col xs={6} md={4} className="col-md-offset-3 col-lg-offset-3">
+            <Col xs={6} md={4} className="col-sm-offset-4 col-md-offset-3 col-lg-offset-3">
               <div>
                 <PhotoUpload defaultValue={this.id}/>
               </div>
@@ -112,7 +112,7 @@ class NewSagaForm extends Component {
           <Form horizontal className="addSagaForm">
             <FormGroup  controlId="formHorizontalText">
               <Row>
-                <Col sm={12} md={12} className="col-md-offset-7 col-lg-offset-7">
+                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
                   <label>What name/title would best describe your saga?</label>
                   <FormControl ref = {ref => this.title = ref} type="text" placeholder="Ex. The Remotest" defaultValue={saga.title} />
                 </Col>
@@ -121,7 +121,7 @@ class NewSagaForm extends Component {
 
             <FormGroup controlId="formHorizontalText">
               <Row>
-                <Col sm={12} md={12} className="col-md-offset-7 col-lg-offset-7">
+                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
                   <label>Who were you with?</label>
                   <FormControl ref = {ref => this.people = ref} type="text" placeholder="Ex. Gabriel and Igor" defaultValue={saga.people}/>
                 </Col>
@@ -130,7 +130,7 @@ class NewSagaForm extends Component {
 
             <FormGroup controlId="formHorizontalText">
               <Row>
-                <Col sm={12} md={12} className="col-md-offset-7 col-lg-offset-7">
+                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
                   <label>When?</label>
                   <FormControl ref = {ref => this.date = ref} type="date" placeholder="Ex. 11/24/2016" defaultValue={formatedDate}/>
                 </Col>
@@ -139,7 +139,7 @@ class NewSagaForm extends Component {
 
             <FormGroup controlId="formHorizontalText">
               <Row>
-                <Col sm={12} md={12} className="col-md-offset-7 col-lg-offset-7">
+                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
                 <label>In what National Park or landmark?</label>
                   <FormControl ref = {ref => this.landmark = ref} type="text" placeholder="Ex. Getu" defaultValue={saga.landmark}/>
                 </Col>
@@ -148,7 +148,7 @@ class NewSagaForm extends Component {
 
             <FormGroup controlId="formHorizontalText">
               <Row>
-                <Col sm={12} md={12} className="col-md-offset-7 col-lg-offset-7">
+                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
                   <label>In what State/Province?</label>
                   <FormControl ref = {ref => this.state = ref} type="text" placeholder="Ex. Getu" defaultValue={saga.state}/>
                 </Col>
@@ -157,7 +157,7 @@ class NewSagaForm extends Component {
 
             <FormGroup controlId="formHorizontalText">
               <Row>
-                <Col sm={12} md={12} className="col-md-offset-7 col-lg-offset-7">
+                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
                   <label>In what country?</label>
                   <FormControl ref = {ref => this.country = ref} type="text" placeholder="Ex. China" defaultValue={saga.country}/>
                 </Col>
@@ -166,7 +166,7 @@ class NewSagaForm extends Component {
 
              <FormGroup controlId="formControlsTextarea">
               <Row>
-                <Col sm={12} md={12} className="col-md-offset-7 col-lg-offset-7">
+                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
                   <label>What happened?</label>
                   <FormControl ref = {ref => this.story = ref} componentClass="textarea" placeholder="Here is where you give a summary of your adventure of the whole story. It can be as short or long as you want!" defaultValue={ saga.story}/>
                 </Col>
@@ -174,9 +174,9 @@ class NewSagaForm extends Component {
           </FormGroup>
           <FormGroup>
           <Row>
-            <Col smOffset={8} sm={4} md={10} className="col-md-offset-10 col-lg-offset-10">
+            <Col smOffset={10} sm={4} md={10} className="col-md-offset-8 col-lg-offset-8">
               {this.renderAlert()}
-              <Button className="btn-warning btn-lg" onClick = {this.handleClick}>
+              <Button className="btn-warning btn-lg center-block" onClick = {this.handleClick}>
                 Add my saga
               </Button>
             </Col>
