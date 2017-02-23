@@ -21,18 +21,24 @@ class Signin extends Component {
     const { handleSubmit, fields} = this.props;
     return (
       <div className = "container signInForm">
-        <form className=" signForms vertical-center" onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-          <fieldset className="form-group topInput">
-            <label>Email:</label>
-            <input {...fields.email} type="text" className="form-control" />
-          </fieldset>
-          <fieldset className="form-group">
-            <label>Password:</label>
-            <input {...fields.password} type="password" className="form-control" />
-          </fieldset>
-          {this.renderAlert()}
-          <button action="submit" className=" btn btn-lg btn-warning">Sign in</button>
-        </form>
+      <div className="row">
+       <div className="col-xs-10 col-xs-offset-2 col-md-8 col-md-offset-3">
+          <form className=" signForms vertical-center" onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
+            <fieldset className="form-group topInput">
+                <label>Email:</label>
+                <input {...fields.email} type="text" className="form-control" />
+              </fieldset>
+              <fieldset className="form-group">
+                <label>Password:</label>
+                <input {...fields.password} type="password" className="form-control" />
+              </fieldset>
+              {this.renderAlert()}
+              <div className="col-xs-2 col-md-3 col-md-offset-1 text-center">
+                <button action="submit" className=" btn btn-lg btn-warning">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     );
   }

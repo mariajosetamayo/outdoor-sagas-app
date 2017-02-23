@@ -104,7 +104,7 @@ body{
 /****** SIGN IN AND SIGN UP FORMS ******/
 
 .signForms{
-  max-width: 600px;
+  width: 80%;
   padding: 15px;
   margin: 0 auto;
   margin-top: 92px;
@@ -459,7 +459,7 @@ body{
   }
 
   .sagaSection {
-    margin-top: 50% !important;
+    margin-top: 15% !important;
   }
 
   /*USER HOME*/
@@ -482,7 +482,7 @@ body{
   /*SAGA DETAILS*/
 
   .sagaContainer{
-    margin-top: 15%;
+    margin-top: 15% !important;
   }
 
 }
