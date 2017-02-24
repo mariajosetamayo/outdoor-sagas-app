@@ -39,7 +39,7 @@ export default class SagaList extends Component {
 
   renderTitleForSagas (){
     if(this.props.authenticated){
-      return <h1 className="text-center">Your Sagas</h1>
+      return <h1 className="text-center titleUserHome2">Your Sagas</h1>
     }else{
       return <h1 className="titleHome2 text-center">Explore Sagas</h1>
     }

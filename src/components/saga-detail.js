@@ -31,7 +31,7 @@ export default class SagaDetail extends Component {
           <h1 className="headingSagaDetail text-center">{this.props.selectedSaga.title}</h1>
           <br/>
           <Row>
-            <Col xs={8} sm={8} md={8} lg={12} className="col-xs-offset-2 col-lg-offset-3">
+            <Col xs={8} sm={8} md={6} lg={10} className="col-xs-offset-2 col-md-offset-3 col-lg-offset-3">
               <Image className="img-responsive vertical-center" src={'https://s3-us-west-1.amazonaws.com/outdoor-sagas3/'+ this.props.selectedSaga.imageName} width='654px' height="408px" rounded />
             </Col>
           </Row>

@@ -31,7 +31,7 @@ class SagaContainer extends Component{
   renderButtons(){
     if(this.props.authenticated && this.props.userId === this.props.userSagaId){
       return (
-          <Col xs={12} md={6} className="col-xs-offset-3 col-md-offset-4 col-lg-offset-5 buttonSection">
+          <Col xs={8} md={6} className="col-xs-offset-2 col-md-offset-3 col-lg-offset-3 buttonSection">
           <Link to='/user-home'>
             <button className=" btn btn-warning  btn-lg" onClick={this.handleClickForDelete}>Delete</button>
           </Link>

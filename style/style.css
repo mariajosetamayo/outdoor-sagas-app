@@ -192,6 +192,14 @@ body{
   margin-top: 1%;
 }
 
+.thumbnailSection{
+  margin-bottom: 10%;
+}
+
+.titleUserHome2{
+  padding-bottom: 5%;
+}
+
 /***** FORM TO ADD SAGA *******/
 
 .headingSagaTellingSpace{
@@ -239,6 +247,10 @@ body{
   font-size: 60px;
   margin-right:5%;
 }
+
+
+
+
 
 /*.mapInSagaDetails{
   margin-left: 15%;
