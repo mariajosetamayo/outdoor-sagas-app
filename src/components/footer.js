@@ -8,7 +8,7 @@ export default class Footer extends Component {
     return(
       <div className="mastfoot" style={sectionStyle} >
         <div className="inner text-center">
-          <p className="footer">All rights reserved. Outdoor-Sagas by  <a href="https://www.linkedin.com/in/maria-jose-tamayo-7506295b/">Maria Jose Tamayo</a>.</p>
+          <p className="footer">All rights reserved. Outdoor-Sagas by  <a href="https://github.com/mariajosetamayo">Maria Jose Tamayo</a>.</p>
         </div>
       </div>
     )
