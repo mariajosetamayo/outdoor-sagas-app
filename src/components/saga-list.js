@@ -18,7 +18,7 @@ export default class SagaList extends Component {
       fontSize: '20px',
       color: 'black',
       fontWeight: 'bold',
-      textShadow: '1px 1px 1px #000000',
+      textShadow: '0.5px 0.5px 0.5px #000000',
     }
 
       return this.props.correctSagas.map((saga, index) =>{
