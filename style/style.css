@@ -87,6 +87,10 @@ body{
   background-color: #E1E1E1 !important;
 }
 
+.thumbnail>a{
+  font-size: 20px !important;
+}
+
 .thumbnail a>img{
   height: 70% !important;
   width: 100%;
