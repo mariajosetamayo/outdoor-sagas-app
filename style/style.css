@@ -160,6 +160,7 @@ body{
     padding: 0;
     height: 80%;
     width: 100%;
+    border-radius: 3px;
 }
 
 .mapSagaDetail{
@@ -190,10 +191,7 @@ body{
 }
 
 .thumbnail > a{
-  color: black !important;
-  font-weight: bold;
-  font-size: 25px;
-  margin-top: 1%;
+  color: #282828 !important;
 }
 
 .thumbnailSection{
@@ -254,20 +252,15 @@ body{
 
 
 
-
-
-/*.mapInSagaDetails{
-  margin-left: 15%;
-}*/
-
-/*.sagaImage{
-  margin-left: 15%;
-}*/
-
-
 /****** MEDIA QUERIES ******/
 
 /*HOME*/
+
+@media screen and(orientation: landscape){
+  .coverPhoto{
+    height: 147% !important;
+  }
+}
 
 @media screen and (max-width: 320px) {
   /* comes into effect for screens less than or equal to 320 pixels */
@@ -296,7 +289,7 @@ body{
   }
 
   .sagaThumnailsContainer{
-    margin-left: -20% !important;
+    margin-left: -13% !important;
     margin-top: -26% !important;
   }
 
@@ -356,6 +349,11 @@ body{
   .sagaSection {
     margin-top: 22% !important;
   }
+
+  /*.sagaThumnailsContainer{
+    margin-left: -5% !important;
+    margin-top: -26% !important;
+  }*/
 
   /*USER HOME*/
 

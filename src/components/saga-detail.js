@@ -24,15 +24,18 @@ export default class SagaDetail extends Component {
 
   render(){
     // console.log('props in render', this.props.location)
+    const sectionStyle = {
+      "marginLeft": "5%"
+    }
 
     return (
       <div className="jumbotron vertical-center sagaDetailSection" >
         <div className="sagaContainer">
-          <h1 className="headingSagaDetail text-center">{this.props.selectedSaga.title}</h1>
+          <h1 className="headingSagaDetail text-center" style={sectionStyle}>{this.props.selectedSaga.title}</h1>
           <br/>
           <Row>
-            <Col xs={8} sm={8} md={6} lg={10} className="col-xs-offset-2 col-md-offset-3 col-lg-offset-3">
-              <Image className="img-responsive vertical-center" src={'https://s3-us-west-1.amazonaws.com/outdoor-sagas3/'+ this.props.selectedSaga.imageName} width='654px' height="408px" rounded />
+            <Col xs={8} sm={8} md={6} lg={10} className="col-xs-offset-2 col-md-offset-3 col-lg-offset-1">
+                <Image className="img-responsive center-block" src={'https://s3-us-west-1.amazonaws.com/outdoor-sagas3/'+ this.props.selectedSaga.imageName} width='654px' height="408px" rounded />
             </Col>
           </Row>
           <br/>

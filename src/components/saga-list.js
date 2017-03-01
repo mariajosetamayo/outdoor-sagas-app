@@ -16,20 +16,20 @@ export default class SagaList extends Component {
       display: 'inline-block',
       float: 'none',
       fontSize: '20px',
-      color: 'black',
+      color: '#282828',
       fontWeight: 'bold',
       textShadow: '0.5px 0.5px 0.5px #000000',
     }
 
-      return this.props.correctSagas.map((saga, index) =>{
+    return this.props.correctSagas.map((saga, index) =>{
       return (
-        <div className="col-xs-10 col-sm-8 col-md-4">
+        <div className="col-xs-8 col-sm-8 col-md-4 col-sm-offset-2">
           <li
             key={index} className="thumbnail" style={sectionStyle} user={this.props.user}>
               <Link to={'/saga/' + saga._id} >
                 <img src={'https://s3-us-west-1.amazonaws.com/outdoor-sagas3/'+ saga.imageName} />
                 <br/>
-                {saga.title}
+                {saga.title.length>29 ? saga.title.substring(0, 29) + '...' : saga.title}
               </Link>
           </li>
         </div>
@@ -58,7 +58,7 @@ export default class SagaList extends Component {
         <br/>
         <div className="container sagaThumnailsContainer">
           <div className="row">
-            <div className="col-xs-12 col-md-12">
+            <div>
               {this.renderSagaThumbnails()}
             </div>
           </div>

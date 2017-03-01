@@ -8,7 +8,6 @@ import Footer from '../components/footer';
 
  class Home extends Component{
    constructor(props){
-     // console.log('these are the props in the map', props)
      super(props)
    }
 
@@ -16,16 +15,13 @@ import Footer from '../components/footer';
      this.props.dispatch(
        actions.fetchAllSagas()
      )
-    //  this.props.dispatch(
-    //    actions.fetchUserId()
-    //  )
    }
 
    render (){
     var sectionStyle = {
       height: '130%',
       position: 'absolute',
-      width: '100%',
+      width:'100%',
       backgroundImage: "url('./images/cover4.jpg')",
       backgroundSize: 'cover',
       backgroundPosition: '60% 60%',
@@ -62,7 +58,6 @@ import Footer from '../components/footer';
  function mapStateToProps(state){
    return {
      sagas:state.app.allSagas,
-    //  userId: state.app.userId
    };
  }
 
