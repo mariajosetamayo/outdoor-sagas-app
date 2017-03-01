@@ -4,11 +4,11 @@
 
 Outdoor Sagas is a full-stack app that allows users to record, share, and save your adventure memories all in one place.
 
-<img src="https://cloud.githubusercontent.com/assets/16930791/23478450/ac7c6372-fe7e-11e6-8b19-27fde8b7f5b5.jpg" width="420" /><img src="https://cloud.githubusercontent.com/assets/16930791/23478793/af80e77c-fe7f-11e6-9753-b91ea5f9dd2f.jpg" width="400" height="220" />
+<img src="https://cloud.githubusercontent.com/assets/16930791/23478450/ac7c6372-fe7e-11e6-8b19-27fde8b7f5b5.jpg" width="420" />  <img src="https://cloud.githubusercontent.com/assets/16930791/23478793/af80e77c-fe7f-11e6-9753-b91ea5f9dd2f.jpg" width="400" height="250" />
 
-<img src="https://cloud.githubusercontent.com/assets/16930791/23478845/d610f8d2-fe7f-11e6-909a-b4c50efb9935.jpg" width="420" /><img src="https://cloud.githubusercontent.com/assets/16930791/23478893/fff572fe-fe7f-11e6-8514-6177a9d4dc55.jpg" width="400" height="220" />
+<img src="https://cloud.githubusercontent.com/assets/16930791/23478845/d610f8d2-fe7f-11e6-909a-b4c50efb9935.jpg" width="420" />  <img src="https://cloud.githubusercontent.com/assets/16930791/23478893/fff572fe-fe7f-11e6-8514-6177a9d4dc55.jpg" width="400" height="250" />
 
-<img src="https://cloud.githubusercontent.com/assets/16930791/23478982/3d49803c-fe80-11e6-9d1a-a39540df08b0.jpg" width="420" /><img src="https://cloud.githubusercontent.com/assets/16930791/23479045/67517916-fe80-11e6-8a1b-53c549b2b8b0.jpg" width="400" height="220" />
+<img src="https://cloud.githubusercontent.com/assets/16930791/23478982/3d49803c-fe80-11e6-9d1a-a39540df08b0.jpg" width="420" />  <img src="https://cloud.githubusercontent.com/assets/16930791/23479045/67517916-fe80-11e6-8a1b-53c549b2b8b0.jpg" width="400" height="250" />
 
 ###Live view###
 
