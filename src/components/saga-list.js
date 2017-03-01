@@ -23,7 +23,7 @@ export default class SagaList extends Component {
 
     return this.props.correctSagas.map((saga, index) =>{
       return (
-        <div className="col-xs-8 col-sm-8 col-md-4 col-sm-offset-2">
+        <div className="col-xs-8 col-sm-8 col-md-4">
           <li
             key={index} className="thumbnail" style={sectionStyle} user={this.props.user}>
               <Link to={'/saga/' + saga._id} >
@@ -58,7 +58,7 @@ export default class SagaList extends Component {
         <br/>
         <div className="container sagaThumnailsContainer">
           <div className="row">
-            <div>
+            <div className="col-xs-12 col-md-12">
               {this.renderSagaThumbnails()}
             </div>
           </div>
