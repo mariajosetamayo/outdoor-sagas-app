@@ -15,18 +15,10 @@ import Col from 'react-bootstrap/lib/Col'
 
 export default class SagaDetail extends Component {
 
-  // renderSagaStory (){
-  //   console.log('this is the story', this.props.story)
-  //   return this.props.story.split('\n').map((item, key) => {
-  //     <span key={key}>{item}<br/></span>
-  //   })
-  // }
-
   render(){
-    // console.log('props in render', this.props.location)
     const sectionStyle = {
       "marginLeft": "5%"
-    }
+    };
 
     return (
       <div className="jumbotron vertical-center sagaDetailSection" >
@@ -57,5 +49,5 @@ export default class SagaDetail extends Component {
         </div>
       </div>
     )
-  }
-}
+  };
+};

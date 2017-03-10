@@ -34,6 +34,5 @@ export default function(state =
       case FETCH_USER_IMAGE:
       return {...state, imageName: action.payload}
     }
-    //console.log('this is the NOT the updated state. This is the state if notihg happens.', state)
     return state;
-  }
+  };

@@ -3,10 +3,6 @@ import {connect} from 'react-redux';
 import ReactDOM from 'react-dom';
 import {Link} from 'react-router';
 import moment from 'moment';
-// import {Form, ValidatedInput} from 'react-bootstrap-validation';
-
-
-
 import * as actions from '../actions/index';
 import FormGroup from 'react-bootstrap/lib/FormGroup'
 import Form from 'react-bootstrap/lib/Form'
@@ -20,26 +16,18 @@ import Image from 'react-bootstrap/lib/Image'
 import PhotoUpload from '../components/photo-uploads';
 import Footer from '../components/footer';
 
-
 class NewSagaForm extends Component {
   constructor (props){
-    console.log('this are the props on the form', props)
-    // console.log(this.props.saga.app.gotData)
     super (props);
     this.handleClick = this.handleClick.bind(this);
-  }
-
-  // componentWillMount(){
-  //   this.props.dispatch(
-  //     actions.fetchUserId()
-  //   )
-  // }
+  };
 
   componentWillUnmount() {
     this.props.dispatch(
       actions.cleanSagaError()
     )
-  }
+  };
+
   handleClick (){
     const saga = {
       sagaId: this.props.params.id,
@@ -61,19 +49,17 @@ class NewSagaForm extends Component {
         actions.saveNewSaga(saga)
       )
     }
-
-  }
+  };
 
   renderAlert (){
     if(this.props.errorMessage){
-      console.log('this is the error message', this.props.errorMessage)
       return(
         <div className = "alert alert-danger alertAddForm">
           <strong>Oops!</strong> {this.props.errorMessage}
         </div>
       );
     }
-  }
+  };
 
   render (){
     var blankSaga = {
@@ -88,9 +74,7 @@ class NewSagaForm extends Component {
     }
 
     var saga = this.props.params.id ? this.props.saga : blankSaga;
-    console.log('this is the saga variable', saga)
     let formatedDate = this.props.params.id ? moment.parseZone(saga.date).format('YYYY-MM-DD') : '';
-    console.log('this is the date', formatedDate)
 
     return (
       <div className="jumbotron addSagaSection">
@@ -185,8 +169,8 @@ class NewSagaForm extends Component {
         </Form>
       </div>
     );
-  }
-}
+  };
+};
 
 const mapStateToProps = (state) => ({
   saga: state.app.selectedSaga,

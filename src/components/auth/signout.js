@@ -3,24 +3,20 @@ import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
 class Signout extends Component{
+
   componentWillMount(){
     this.props.signoutUser();
-  }
+  };
 
   render(){
-
     var sectionStyle = {
       height: '100%',
       position: 'absolute',
       width: '100%',
-      // maxHeight: '900px',
       backgroundImage: "url('./images/cover2.jpg')",
-      // backgroundSize: size,
       backgroundSize: 'cover',
       backgroundPosition: '60% 60%',
-      // backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
-      // marginTop: '-1.7%',
     };
 
     return (
@@ -35,7 +31,7 @@ class Signout extends Component{
          </div>
        </div>
     );
-  }
-}
+  };
+};
 
 export default connect(null, actions)(Signout);

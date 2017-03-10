@@ -3,9 +3,10 @@ import {reduxForm} from 'redux-form';
 import * as actions from '../../actions';
 
 class Signin extends Component {
+
   handleFormSubmit({ email, password }){
     this.props.signinUser({ email, password});
-  }
+  };
 
   renderAlert (){
     if(this.props.errorMessage){
@@ -15,7 +16,7 @@ class Signin extends Component {
         </div>
       );
     }
-  }
+  };
 
   render(){
     const { handleSubmit, fields} = this.props;
@@ -41,15 +42,14 @@ class Signin extends Component {
         </div>
       </div>
     );
-  }
-}
+  };
+};
 
 function mapStateToProps(state){
   return { errorMessage: state.auth.error};
-}
+};
 
 // Redux form helper: lets us have access to props such as fields(email, Password). It works like the connect helper.
-// We also get access to actions inside props inside components
 export default reduxForm({
   form: 'signin',
   fields: ['email', 'password']

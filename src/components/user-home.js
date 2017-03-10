@@ -13,10 +13,8 @@ import Footer from '../components/footer';
 
 class UserHome extends Component{
   constructor(props){
-    console.log('these are the props in the map', props)
-
     super(props)
-  }
+  };
 
   componentDidMount(){
     this.props.fetchMessage();
@@ -26,7 +24,8 @@ class UserHome extends Component{
     this.props.dispatch(
       actions.fetchUserId()
     )
-  }
+  };
+
   render(){
     console.log('THIS IS THE USER ID IN USER HOME', this.props.userId)
     return(
@@ -54,7 +53,7 @@ class UserHome extends Component{
       </div>
     );
   }
-}
+};
 
 function mapStateToProps(state){
   return {
@@ -63,6 +62,6 @@ function mapStateToProps(state){
     sf:state.app.userSagas,
     userId: state.app.userId
   };
-}
+};
 
 export default connect (mapStateToProps, actions)(UserHome);

@@ -9,7 +9,7 @@ import GoogleMapAllLocations from '../components/google-map-all-locations';
 export default class SagaList extends Component {
   constructor(props){
     super(props)
-  }
+  };
 
   renderSagaThumbnails (){
     var sectionStyle = {
@@ -19,7 +19,7 @@ export default class SagaList extends Component {
       color: '#282828',
       fontWeight: 'bold',
       textShadow: '0.5px 0.5px 0.5px #000000',
-    }
+    };
 
     return this.props.correctSagas.map((saga, index) =>{
       return (
@@ -35,7 +35,7 @@ export default class SagaList extends Component {
         </div>
       )
     })
-  }
+  };
 
   renderTitleForSagas (){
     if(this.props.authenticated){
@@ -43,7 +43,7 @@ export default class SagaList extends Component {
     }else{
       return <h1 className="titleHome2 text-center">Explore Sagas</h1>
     }
-  }
+  };
 
   render(){
     console.log("rerender")
@@ -65,5 +65,5 @@ export default class SagaList extends Component {
         </div>
       </div>
     )
-  }
-}
+  };
+};

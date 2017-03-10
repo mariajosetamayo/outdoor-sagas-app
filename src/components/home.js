@@ -15,7 +15,7 @@ import Footer from '../components/footer';
      this.props.dispatch(
        actions.fetchAllSagas()
      )
-   }
+   };
 
    render (){
     var sectionStyle = {
@@ -53,12 +53,12 @@ import Footer from '../components/footer';
         </div>
      );
    }
- }
+ };
 
  function mapStateToProps(state){
    return {
      sagas:state.app.allSagas,
    };
- }
+ };
 
  export default connect (mapStateToProps)(Home);

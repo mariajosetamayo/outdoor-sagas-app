@@ -13,20 +13,19 @@ class SagaContainer extends Component{
     console.log('props in saga details',props)
     super(props)
     this.handleClickForDelete = this.handleClickForDelete.bind(this);
-    // this.handleClickForEdit = this.handleClickForEdit.bind(this);
-  }
+  };
 
   handleClickForDelete(){
     this.props.dispatch(
       actions.deleteSaga(this.props.params.id)
     )
-  }
+  };
 
   componentWillMount(){
     this.props.dispatch(
       actions.fetchSelectedSaga(this.props.params.id)
     )
-  }
+  };
 
   renderButtons(){
     if(this.props.authenticated && this.props.userId === this.props.userSagaId){
@@ -41,7 +40,7 @@ class SagaContainer extends Component{
         </Col>
       )
     }
-  }
+  };
 
   render(){
     console.log('these are the props in saga details', this.props)
@@ -53,8 +52,8 @@ class SagaContainer extends Component{
         </div>
       </div>
     );
-  }
-}
+  };
+};
 
 const mapStateToProps = (state) => ({
   saga: state.app.selectedSaga,
