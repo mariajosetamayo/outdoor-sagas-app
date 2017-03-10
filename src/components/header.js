@@ -12,7 +12,7 @@ class Header extends Component {
   renderLinks(){
     if(this.props.authenticated){
       return [
-        <li className="nav-item btn btn-warning userHomeBtn" key={4}>
+        <li className="nav-item btn btn-info" key={4}>
           <Link className="nav-link" to = "/user-home">My Profile</Link>
         </li>,
         <li className="nav-item btn btn-warning" key={3}>
@@ -30,7 +30,7 @@ class Header extends Component {
       ];
     }
   };
-  
+
   render(){
     return (
       <nav className = "navbar navbar-fixed-top navbar-toggleable-md navBar">
