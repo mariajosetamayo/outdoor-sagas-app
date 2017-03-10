@@ -46,7 +46,6 @@ export default class SagaList extends Component {
   };
 
   render(){
-    console.log("rerender")
     return(
       <div>
         <div className="mapAllLocations" className= "iframe-container col-centered" >

@@ -3,15 +3,11 @@ import {connect} from 'react-redux';
 import * as actions from '../actions/index';
 import {Link} from 'react-router';
 import moment from 'moment';
-
-
 import GoogleMap from '../components/google-map';
 import GoogleMapAllLocations from '../components/google-map-all-locations';
 import Row from 'react-bootstrap/lib/Row'
 import Image from 'react-bootstrap/lib/Image'
 import Col from 'react-bootstrap/lib/Col'
-
-
 
 export default class SagaDetail extends Component {
 
@@ -19,7 +15,6 @@ export default class SagaDetail extends Component {
     const sectionStyle = {
       "marginLeft": "5%"
     };
-
     return (
       <div className="jumbotron vertical-center sagaDetailSection" >
         <div className="sagaContainer">

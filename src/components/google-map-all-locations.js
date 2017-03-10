@@ -17,15 +17,13 @@ export default class GoogleMapAllLocations extends Component {
     });
   };
 
-
   render () {
     const markers = this.props.correctSagas.map((saga) =>{
-      let coordinatesArray = []
-
-      let individualCoordinatesArray = []
-      individualCoordinatesArray.push (saga.location.lat, saga.location.lng)
-      coordinatesArray.push(individualCoordinatesArray)
-      return coordinatesArray
+      let coordinatesArray = [];
+      let individualCoordinatesArray = [];
+      individualCoordinatesArray.push (saga.location.lat, saga.location.lng);
+      coordinatesArray.push(individualCoordinatesArray);
+      return coordinatesArray;
     });
 
     for ( var i = 0; i< markers.length; i++){

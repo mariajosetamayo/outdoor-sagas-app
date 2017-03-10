@@ -12,11 +12,10 @@ class PhotoUpload extends Component {
   };
 
   onDrop(files){
-    var d = new Date();
-    var n = d.getTime();
-    console.log('this is the photo name', n)
+    var date = new Date();
+    var name = date.getTime();
     this.props.dispatch(
-      actions.uploadPicture(files, n)
+      actions.uploadPicture(files, name)
     )
   };
 

@@ -12,9 +12,6 @@ import GoogleMapAllLocations from '../components/google-map-all-locations';
 import Footer from '../components/footer';
 
 class UserHome extends Component{
-  constructor(props){
-    super(props)
-  };
 
   componentDidMount(){
     this.props.fetchMessage();
@@ -27,7 +24,6 @@ class UserHome extends Component{
   };
 
   render(){
-    console.log('THIS IS THE USER ID IN USER HOME', this.props.userId)
     return(
       <div className="userHome">
         <Jumbotron className="welcomeSection">

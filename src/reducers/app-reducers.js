@@ -19,7 +19,6 @@ export default function(state =
   {
     switch(action.type){
       case FETCH_SAGAS:
-      console.log('this are the sagas to be saved', action.payload)
       return {...state, userSagas: action.payload};
       case FETCH_SELECTED_SAGA:
       return {...state, selectedSaga: action.payload};

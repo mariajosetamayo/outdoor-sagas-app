@@ -2,15 +2,14 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import * as actions from '../actions';
 import {Link} from 'react-router';
-
 import SagaDetail from '../components/saga-detail'
 import Row from 'react-bootstrap/lib/Row'
 import Image from 'react-bootstrap/lib/Image'
 import Col from 'react-bootstrap/lib/Col'
 
 class SagaContainer extends Component{
+
   constructor (props){
-    console.log('props in saga details',props)
     super(props)
     this.handleClickForDelete = this.handleClickForDelete.bind(this);
   };
@@ -43,7 +42,6 @@ class SagaContainer extends Component{
   };
 
   render(){
-    console.log('these are the props in saga details', this.props)
     return(
       <div>
         <div><SagaDetail type="sagaDetail" id= {this.props.params.id} selectedSaga= {this.props.saga} authenticated= {this.props.authenticated} story={this.props.story}/></div>

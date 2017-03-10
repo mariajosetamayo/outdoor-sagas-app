@@ -30,10 +30,9 @@ class Header extends Component {
       ];
     }
   };
-
+  
   render(){
     return (
-
       <nav className = "navbar navbar-fixed-top navbar-toggleable-md navBar">
         <div className = "container-fluid">
           <div className="navbar-header">

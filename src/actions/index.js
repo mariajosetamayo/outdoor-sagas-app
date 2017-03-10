@@ -17,15 +17,13 @@ import {
   FETCH_USER_IMAGE
 } from './types';
 
-
 const ROOT_URL = 'https://intense-sierra-84065.herokuapp.com';
 
 export function signinUser({email, password}){
   return function (dispatch){
-    axios.post(`${ROOT_URL}/signin`, {email, password})// in es5 syntax: email:email, password:password
+    axios.post(`${ROOT_URL}/signin`, {email, password})
     .then(response => {
       dispatch({ type: AUTH_USER });
-      // save the JWT token in localStorage
       localStorage.setItem('token', response.data.token)
       browserHistory.push('/user-home');
     })
