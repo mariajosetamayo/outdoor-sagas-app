@@ -16,14 +16,13 @@ https://outdoor-sagas.herokuapp.com/
 
 ###Getting Started###
 
-Outdoor Sagas is divided into two repos: the app repo and the server repo. This is the app repo, which contains the front-end
-of the application. To start the backend of the application, please got to: https://github.com/mariajosetamayo/outdoor-sagas-server
+Outdoor Sagas is divided into two repos: the app repo and the server repo. This is the app repo, which contains the front end
+of the application. To start the back end of the application, please got to: https://github.com/mariajosetamayo/outdoor-sagas-server
 
 ####Getting started with the app package#####
 
 ```
 	> git clone git@github.com:mariajosetamayo/outdoorSagas.git
-	> cd app
 	> npm install
 	> npm start
 ```
