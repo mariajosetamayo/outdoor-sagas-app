@@ -19,25 +19,25 @@ import Footer from '../components/footer';
 
    render (){
     var sectionStyle = {
-      height: '130%',
-      position: 'absolute',
-      width:'100%',
-      backgroundImage: "url('./images/cover4.jpg')",
-      backgroundSize: 'cover',
-      backgroundPosition: '60% 60%',
-      backgroundRepeat: 'no-repeat',
+
     };
 
      return (
-        <div className="site-wrapper responsive-image coverPhoto" style={sectionStyle}>
-          <div className="site-wrapper-inner">
-            <div className="cover-container" >
-              <div className="inner cover">
-                <h1 className="cover-heading container slogan">Live the adventure, save it, share it. </h1>
-                <p className="lead "></p>
+        <div className="site-wrapper">
+
+        <div className="gallery gallery-size =">
+          <div className="gallery-image gallery-size">
+            <img src="/images/cover4.jpg" className="gallery-size" />
+
+              <div className="gallery-text">
+                <h3>Live the adventure, save it, share it.</h3>
                 <Scrollchor to="#mainSection" animate={{duration: 2000}}><div className="btn btn-lg btn-warning learnMoreButton ">Learn more</div></Scrollchor>
               </div>
-            </div>
+          </div>
+        </div>
+
+          <div className="site-wrapper-inner">
+
               <div className= "jumbotron vertical-center sagaSection" id="mainSection">
                 <hr className="featurette-divider"  />
                 <div className="row featurette">
