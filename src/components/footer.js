@@ -3,7 +3,8 @@ import React, {Component} from 'react';
 export default class Footer extends Component {
   render (){
     var sectionStyle={
-      paddingTop: '13%'
+      paddingTop: '13%',
+      backgroundColor: '#292929'
     }
     return(
       <div className="mastfoot" style={sectionStyle} >
