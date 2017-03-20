@@ -64,12 +64,12 @@ body{
 }
 
 .title1Home{
-  font-size: 40px;
+  font-size: 40px !important;
   padding-left: 2%;
 }
 
 .titleHome2{
-  font-size: 40px;
+  font-size: 40px !important;
   padding-top: 2%;
 }
 
