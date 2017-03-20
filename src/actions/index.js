@@ -138,11 +138,11 @@ export function deleteSaga(sagaId){
   }
 }
 
-export function editSaga(sagaId, {title, people, date, landmark, state, country, story}){
+export function editSaga(sagaId, {title, people, date, landmark, state, country, story, imageName}){
   const authHeaders = {headers: { authorization: localStorage.getItem('token')}}
   return function(dispatch){
     axios.put(`${ROOT_URL}/add-saga/` + sagaId,
-       {title, people, date, landmark, state, country, story},
+       {title, people, date, landmark, state, country, story, imageName},
        authHeaders)
     .then(response =>{
       browserHistory.push('/user-home');

@@ -19,7 +19,7 @@ import Footer from '../components/footer';
 
    render (){
     var sectionStyle = {
-
+      fontSize:'35px'
     };
 
      return (
@@ -30,7 +30,7 @@ import Footer from '../components/footer';
             <img src="/images/cover4.jpg" className="gallery-size" />
 
               <div className="gallery-text">
-                <h3>Live the adventure, save it, share it.</h3>
+                <h3 className="sloganText" style={sectionStyle}>Live the adventure, save it, share it.</h3>
                 <Scrollchor to="#mainSection" animate={{duration: 2000}}><div className="btn btn-lg btn-warning learnMoreButton ">Learn more</div></Scrollchor>
               </div>
           </div>
