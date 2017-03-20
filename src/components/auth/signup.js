@@ -3,10 +3,10 @@ import { reduxForm} from 'redux-form';
 import * as actions from '../../actions';
 
 class Signup extends Component {
+
   handleSubmit(formProps){
-    // Call action creator to sign up the user
     this.props.signupUser(formProps);
-  }
+  };
 
   renderAlert(){
     if(this.props.errorMessage){
@@ -16,7 +16,8 @@ class Signup extends Component {
         </div>
       );
     }
-  }
+  };
+
   render(){
     const { handleSubmit, fields: { email, password, passwordConfirm}} = this.props;
     return (
@@ -48,8 +49,8 @@ class Signup extends Component {
         </div>
       </div>
     );
-  }
-}
+  };
+};
 
 function validate(formProps){
   const errors = {};
@@ -70,12 +71,12 @@ function validate(formProps){
     errors.password = 'Passwords must match';
   }
 
-  return errors; // always return errors by default, even if there is no error
-}
+  return errors;
+};
 
 function mapStateToProps(state){
   return { errorMessage: state.auth.error}
-}
+};
 
 export default reduxForm({
   form : 'signup',

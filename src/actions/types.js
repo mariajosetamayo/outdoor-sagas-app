@@ -1,8 +1,8 @@
+// Authorization action types
 export const AUTH_USER = 'auth_user';
 export const LOGOUT_USER = 'unauth_user';
 export const AUTH_ERROR = 'auth_error';
 export const FETCH_MESSAGE = 'fetch_message';
-
 
 // App action types
 export const FETCH_SAGAS ='fetch_sagas';

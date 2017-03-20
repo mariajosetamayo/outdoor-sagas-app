@@ -3,31 +3,18 @@ import {connect} from 'react-redux';
 import * as actions from '../actions/index';
 import {Link} from 'react-router';
 import moment from 'moment';
-
-
 import GoogleMap from '../components/google-map';
 import GoogleMapAllLocations from '../components/google-map-all-locations';
 import Row from 'react-bootstrap/lib/Row'
 import Image from 'react-bootstrap/lib/Image'
 import Col from 'react-bootstrap/lib/Col'
 
-
-
 export default class SagaDetail extends Component {
 
-  // renderSagaStory (){
-  //   console.log('this is the story', this.props.story)
-  //   return this.props.story.split('\n').map((item, key) => {
-  //     <span key={key}>{item}<br/></span>
-  //   })
-  // }
-
   render(){
-    // console.log('props in render', this.props.location)
     const sectionStyle = {
       "marginLeft": "5%"
-    }
-
+    };
     return (
       <div className="jumbotron vertical-center sagaDetailSection" >
         <div className="sagaContainer">
@@ -57,5 +44,5 @@ export default class SagaDetail extends Component {
         </div>
       </div>
     )
-  }
-}
+  };
+};

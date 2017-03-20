@@ -9,7 +9,7 @@ import GoogleMapAllLocations from '../components/google-map-all-locations';
 export default class SagaList extends Component {
   constructor(props){
     super(props)
-  }
+  };
 
   renderSagaThumbnails (){
     var sectionStyle = {
@@ -19,11 +19,11 @@ export default class SagaList extends Component {
       color: '#282828',
       fontWeight: 'bold',
       textShadow: '0.5px 0.5px 0.5px #000000',
-    }
+    };
 
     return this.props.correctSagas.map((saga, index) =>{
       return (
-        <div className="col-xs-8 col-sm-8 col-md-4">
+        <div className="col-xs-8 col-sm-8 col-md-4 col-sm-offset-2 col-lg-offset-0">
           <li
             key={index} className="thumbnail" style={sectionStyle} user={this.props.user}>
               <Link to={'/saga/' + saga._id} >
@@ -35,7 +35,7 @@ export default class SagaList extends Component {
         </div>
       )
     })
-  }
+  };
 
   renderTitleForSagas (){
     if(this.props.authenticated){
@@ -43,10 +43,9 @@ export default class SagaList extends Component {
     }else{
       return <h1 className="titleHome2 text-center">Explore Sagas</h1>
     }
-  }
+  };
 
   render(){
-    console.log("rerender")
     return(
       <div>
         <div className="mapAllLocations" className= "iframe-container col-centered" >
@@ -56,7 +55,7 @@ export default class SagaList extends Component {
         {this.renderTitleForSagas()}
         <br/>
         <br/>
-        <div className="container sagaThumnailsContainer">
+        <div className="container sagaThumbnailsContainer">
           <div className="row">
             <div className="col-xs-12 col-md-12">
               {this.renderSagaThumbnails()}
@@ -65,5 +64,5 @@ export default class SagaList extends Component {
         </div>
       </div>
     )
-  }
-}
+  };
+};
