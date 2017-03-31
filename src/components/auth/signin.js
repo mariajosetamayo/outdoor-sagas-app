@@ -4,6 +4,14 @@ import * as actions from '../../actions';
 
 class Signin extends Component {
 
+  activateDemoButton (){
+    const demoUser = {
+      email: 'demo@demo',
+      password: 'demo'
+    }
+      this.props.signinUser(demoUser);
+  }
+
   handleFormSubmit({ email, password }){
     this.props.signinUser({ email, password});
   };
@@ -23,7 +31,7 @@ class Signin extends Component {
     return (
       <div className = "container signInForm">
       <div className="row">
-       <div className="col-xs-10 col-xs-offset-2 col-md-8 col-md-offset-3">
+       <div className="formDiv">
           <form className=" signForms vertical-center" onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
             <fieldset className="form-group topInput">
                 <label>Email:</label>
@@ -34,11 +42,15 @@ class Signin extends Component {
                 <input {...fields.password} type="password" className="form-control" />
               </fieldset>
               {this.renderAlert()}
-              <div className="col-xs-2 col-md-3 col-md-offset-1 text-center">
-                <button action="submit" className=" btn btn-lg btn-warning">Sign in</button>
+              <div>
+                <button action="submit" className=" btn btn-lg btn-warning signupBtn">Sign in</button>
+              </div>
+              <div className="demoBtn2">
+                <button className=" btn btn-lg btn-warning " onClick= {this.activateDemoButton.bind(this)}>Demo Account</button>
               </div>
             </form>
           </div>
+
         </div>
       </div>
     );

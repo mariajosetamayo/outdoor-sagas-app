@@ -109,10 +109,13 @@ body{
 /****** SIGN IN AND SIGN UP FORMS ******/
 
 .signForms{
+  position: absolute;
+  left:50%;
+  top:40%;
+  transform: translate(-50%, -50%);
   width: 80%;
   padding: 15px;
   margin: 0 auto;
-  margin-top: 92px;
 }
 
 .signForms .form-control {
@@ -582,3 +585,21 @@ body{
     width: 50%;
     margin: -15% 0 0 -25%;
 	}
+
+  .formDiv{
+    text-align: -webkit-center;
+  }
+
+  .demoBtn{
+    position: absolute;
+    left: 50%;
+    top: 107%;
+    transform: translate(-50%, -50%);
+  }
+
+  .demoBtn2{
+    position: absolute;
+    left: 50%;
+    top: 109%;
+    transform: translate(-50%, -50%);
+  }

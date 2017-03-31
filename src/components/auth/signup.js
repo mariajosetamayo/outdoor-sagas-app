@@ -4,8 +4,17 @@ import * as actions from '../../actions';
 
 class Signup extends Component {
 
+
+  activateDemoButton (){
+    const demoUser = {
+      email: 'demo@demo',
+      password: 'demo'
+    }
+      this.props.signinUser(demoUser);
+  }
+
   handleSubmit(formProps){
-    this.props.signupUser(formProps);
+      this.props.signupUser(formProps);
   };
 
   renderAlert(){
@@ -23,7 +32,7 @@ class Signup extends Component {
     return (
       <div className="container signUpForm">
       <div className="row">
-       <div className="col-xs-10 col-xs-offset-2 col-md-8 col-md-offset-3">
+       <div className="formDiv">
           <form className="vertical-center signForms" onSubmit={handleSubmit(this.handleSubmit.bind(this))}>
             <fieldset className = "form-group topInput">
               <label> Email: </label>
@@ -41,8 +50,11 @@ class Signup extends Component {
                 {passwordConfirm.touched && passwordConfirm.error && <div className="error">{passwordConfirm.error}</div>}
             </fieldset>
               {this.renderAlert()}
-              <div className="col-xs-2 col-md-3 col-md-offset-1 text-center">
-                <button action ="submit" className="btn btn-lg btn-warning">Sign Up</button>
+              <div>
+                <button action ="submit" className="btn btn-lg btn-warning signupBtn">Sign Up</button>
+              </div>
+              <div className="demoBtn">
+                <button className=" btn btn-lg btn-warning " onClick= {this.activateDemoButton.bind(this)}>Demo Account</button>
               </div>
             </form>
           </div>
