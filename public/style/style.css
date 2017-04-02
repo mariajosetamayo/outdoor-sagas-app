@@ -55,22 +55,23 @@ body{
   text-align: center;
 }
 
-.slogan {
+/*.slogan {
   color: white;
   font-size: 40px;
   margin-top: 10%;
   text-shadow: 3px 3px 4px #000000;
   font-weight: bold;
-}
+}*/
 
 .title1Home{
-  font-size: 40px !important;
-  padding-left: 2%;
+  /*font-size: 35px !important;*/
+  padding-bottom: 3%;
 }
 
 .titleHome2{
-  font-size: 40px !important;
-  padding-top: 2%;
+  /*font-size: 35px !important;*/
+padding-top: 6%;
+/*padding-bottom: 2%;*/
 }
 
 .sagaSection{
@@ -99,7 +100,7 @@ body{
 }
 
 .sagaThumnailsContainer{
-  margin-top: -7%;
+  /*margin-top: -7%;*/
 }
 
 .footer{
@@ -255,6 +256,10 @@ body{
   margin-right:5%;
 }
 
+.jumbotron{
+  border-radius: 0px !important;
+}
+
 
 
 /****** MEDIA QUERIES ******/
@@ -268,25 +273,36 @@ body{
     font-size: 20px !important;
   }
 
-  .sagaThumbnailsContainer{
-    margin-left: -19% !important;
-    margin-top: -26% !important;
+  .gallery-text{
+    top: 60% !important;
   }
 
-  .thumbnail{
-    width: 264 !important;
-    height: 260px !important;
+  .instructionsDiv{
+    width: 80% !important;
   }
 
-  .title1Home{
-    font-size: 30px;
-    /*padding-left: 2%;*/
+  #thumbnail{
+    width: 244px;
+    height: 249px;
   }
 
-  .titleHome2{
-    font-size: 30px;
-    /*padding-top: 2%;*/
+  #title1Home{
+    font-size: 30px !important;
   }
+
+  #titleHome2{
+    font-size: 30px !important;
+  }
+
+  #howTitle{
+    font-size: 30px !important;
+  }
+
+  .jumbotron p {
+    margin-bottom: 15px;
+    font-size: 18px !important;
+    font-weight: 200;
+}
 
   /*USER HOME*/
 
@@ -323,18 +339,14 @@ body{
 }
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
-  .sagaThumbnailsContainer{
-    margin-left: -10% !important;
-    margin-top: -26% !important;
-  }
 
   .headingSagaDetail{
     font-size: 30px !important;
   }
 
-  .sloganText{
+  /*.sloganText{
     font-size: 20px !important;
-  }
+  }*/
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
@@ -342,6 +354,10 @@ body{
   /*.mastFoot{
     margin-top: -10%;
   }*/
+
+  .instructionsDiv{
+    width: 80% !important;
+  }
 
   .coverPhoto{
     height: 90% !important;
@@ -358,7 +374,7 @@ body{
     font-size: 20px !important;
   }
 
-  .title1Home{
+  /*.title1Home{
     margin-top: 2%;
     font-size: 25px !important;
 
@@ -366,7 +382,7 @@ body{
 
   .titleHome2{
     font-size: 30px !important;
-  }
+  }*/
 
   .sagaSection {
     /*margin-top: 22% !important;*/
@@ -428,15 +444,15 @@ body{
     /*text-align: center;*/*/
   }
 
-  .title1Home{
+  /*.title1Home{
     margin-top: 2%;
     font-size: 25px !important;
 
-  }
+  }*/
 
-  .titleHome2{
-    font-size: 30px !important;
-  }
+  /*.titleHome2{
+    font-size: 25px !important;
+  }*/
 
   .sagaSection {
     /*margin-top: 10% !important;*/
@@ -478,7 +494,7 @@ body{
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1266px){
+/*@media screen and (min-width: 1025px) and (max-width: 1266px){
 
   .coverPhoto{
     height: 100% !important;
@@ -486,22 +502,22 @@ body{
   .slogan{
     font-size: 35px !important;
     margin-top: 40% !important;
-    /*text-align: center;*/*/
-  }
+    /*text-align: center;*/
+  /*}*/
 
-  .title1Home{
+  /*.title1Home{
     margin-top: 2%;
     font-size: 25px !important;
 
-  }
+  }*/
 
-  .titleHome2{
-    font-size: 30px !important;
-  }
+  /*.titleHome2{
+    font-size: 25px !important;
+  }*/
 
-  .sagaSection {
+  /*.sagaSection {*/
     /*margin-top: 15% !important;*/
-  }
+  /*}*/
 
   /*USER HOME*/
 
@@ -532,8 +548,8 @@ body{
   .slogan{
     font-size: 35px !important;
     margin-top: 70%;
-    /*text-align: center;*/*/
-  }*/
+    /*text-align: center;*/
+  /*}*/
 
 /*ADD SAGA*/
 
@@ -584,6 +600,7 @@ body{
     height: 30%;
     width: 50%;
     margin: -15% 0 0 -25%;
+    text-shadow: #282828 2px 2px 2px;
 	}
 
   .formDiv{
@@ -602,4 +619,9 @@ body{
     left: 50%;
     top: 107%;
     transform: translate(-50%, -50%);
+  }
+
+  hr{
+    /*margin-top: -15px !important;
+    margin-bottom: 4px !important;*/
   }

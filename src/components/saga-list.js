@@ -23,9 +23,9 @@ export default class SagaList extends Component {
 
     return this.props.correctSagas.map((saga, index) =>{
       return (
-        <div className="col-xs-8 col-sm-8 col-md-4 col-sm-offset-2 col-lg-offset-0">
+        <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4">
           <li
-            key={index} className="thumbnail" style={sectionStyle} user={this.props.user}>
+            key={index} className="thumbnail" id="thumbnail" style={sectionStyle} user={this.props.user}>
               <Link to={'/saga/' + saga._id} >
                 <img src={'https://s3-us-west-1.amazonaws.com/outdoor-sagas3/'+ saga.imageName} />
                 <br/>
@@ -38,10 +38,15 @@ export default class SagaList extends Component {
   };
 
   renderTitleForSagas (){
+
+    const homeTextSize = {
+      fontSize: '45px'
+    }
+
     if(this.props.authenticated){
       return <h1 className="text-center titleUserHome2">Your Sagas</h1>
     }else{
-      return <h1 className="titleHome2 text-center">Explore Sagas</h1>
+      return <h1 className="titleHome2 text-center" id="titleHome2" style={homeTextSize}>Explore Sagas</h1>
     }
   };
 
@@ -53,14 +58,10 @@ export default class SagaList extends Component {
         </div>
         <hr className="featurette-divider"  />
         {this.renderTitleForSagas()}
-        <br/>
-        <br/>
         <div className="container sagaThumbnailsContainer">
-          <div className="row">
-            <div className="col-xs-12 col-md-12">
+            <div className="row">
               {this.renderSagaThumbnails()}
             </div>
-          </div>
         </div>
       </div>
     )
