@@ -29,9 +29,9 @@ class SagaContainer extends Component{
   renderButtons(){
     if(this.props.authenticated && this.props.userId === this.props.userSagaId){
       return (
-          <Col xs={8} md={6} className="col-xs-offset-2 col-md-offset-3 col-lg-offset-3 buttonSection">
+          <Col className="buttonSection">
           <Link to='/user-home'>
-            <button className=" btn btn-warning  btn-lg" onClick={this.handleClickForDelete}>Delete</button>
+            <button className=" btn btn-warning  btn-lg deleteBtn" onClick={this.handleClickForDelete}>Delete</button>
           </Link>
           <Link to={'/add-saga/' + this.props.params.id}>
             <button className=" btn btn-warning btn-lg editBtn">Edit</button>
@@ -42,8 +42,15 @@ class SagaContainer extends Component{
   };
 
   render(){
+    var mainDivStyles={
+      position: 'absolute',
+      top: '40%',
+      marginTop: '-200px',
+      left: '0',
+      width: '100%'
+    }
     return(
-      <div>
+      <div style={mainDivStyles}>
         <div><SagaDetail type="sagaDetail" id= {this.props.params.id} selectedSaga= {this.props.saga} authenticated= {this.props.authenticated} story={this.props.story}/></div>
         <div>
           {this.renderButtons()}

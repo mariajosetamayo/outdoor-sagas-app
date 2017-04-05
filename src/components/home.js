@@ -42,6 +42,10 @@ import Footer from '../components/footer';
       fontSize: '45px'
     }
 
+    const learnMoreButtonStyle = {
+      boxShadow: '#282828 1.5px 1.5px 1.5px'
+    }
+
      return (
         <div className="site-wrapper">
 
@@ -51,7 +55,7 @@ import Footer from '../components/footer';
 
               <div className="gallery-text">
                 <h3 className="sloganText" style={sectionStyle}>Live the adventure, save it, share it.</h3>
-                <Scrollchor to="#mainSection" animate={{duration: 2000}}><div className="btn btn-lg btn-warning learnMoreButton ">Learn more</div></Scrollchor>
+                <Scrollchor to="#mainSection" animate={{duration: 2000}}><div className="btn btn-lg btn-warning learnMoreButton " style={learnMoreButtonStyle}>Learn more</div></Scrollchor>
               </div>
           </div>
         </div>

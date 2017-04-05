@@ -15,19 +15,24 @@ export default class SagaDetail extends Component {
     const sectionStyle = {
       "marginLeft": "5%"
     };
+
+    const mapStyle = {
+      width: '80%',
+      margin: '0 auto'
+    }
     return (
       <div className="jumbotron vertical-center sagaDetailSection" >
         <div className="sagaContainer">
           <h1 className="headingSagaDetail text-center" style={sectionStyle}>{this.props.selectedSaga.title}</h1>
           <br/>
           <Row>
-            <Col xs={8} sm={8} md={6} lg={10} className="col-xs-offset-2 col-md-offset-3 col-lg-offset-1">
+            <Col>
                 <Image className="img-responsive center-block" src={'https://s3-us-west-1.amazonaws.com/outdoor-sagas3/'+ this.props.selectedSaga.imageName} width='654px' height="408px" rounded />
             </Col>
           </Row>
           <br/>
           <Row>
-            <Col xs={8} sm={8} md={8} className="col-xs-offset-2 col-lg-offset-2">
+            <Col style={mapStyle}>
               <h3>This saga happened on {moment.parseZone(this.props.selectedSaga.date).format('dddd, MMMM Do, YYYY')} with {this.props.selectedSaga.people} in:</h3>
               <br/>
                 <div className= "mapAllLocations" className="iframe-container mapSagaDetail vertical-center">
@@ -36,7 +41,7 @@ export default class SagaDetail extends Component {
             </Col>
           </Row>
           <Row>
-            <Col xs={8} md={8} lg={8} className="col-xs-offset-2 col-lg-offset-2">
+            <Col>
               <div className="storyText">{this.props.story}</div>
             </Col>
           </Row>

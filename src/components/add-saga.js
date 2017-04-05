@@ -73,99 +73,105 @@ class NewSagaForm extends Component {
       story: ''
     }
 
+    var styleForButton = {
+      paddingTop: '5%'
+    }
+
+    var styleForTitleAndImage = {
+      textAlign: 'webkitCenter'
+    }
+
     var saga = this.props.params.id ? this.props.saga : blankSaga;
     let formatedDate = this.props.params.id ? moment.parseZone(saga.date).format('YYYY-MM-DD') : '';
 
     return (
       <div className="jumbotron addSagaSection">
-        <Row>
-          <Col xs={6} md={8} className="col-sm-offset-3 col-md-offset-3 col-lg-offset-3 sagaTellingCol">
-            <h1 className="headingSagaTellingSpace text-center">Saga telling space</h1>
+        <div className="styleForTitleAndImage">
+          <Col>
+            <h1 className=" text-center">Saga telling space</h1>
             <br/>
             <br/>
           </Col>
-        </Row>
-          <Row>
-            <Col xs={6} md={4} className="col-sm-offset-4 col-md-offset-3 col-lg-offset-3">
+        </div>
+          <div className="styleForTitleAndImage">
+            <Col >
               <div>
                 <PhotoUpload defaultValue={this.id}/>
               </div>
             </Col>
-          </Row>
+          </div>
           <br/>
           <Form horizontal className="addSagaForm">
-            <FormGroup  controlId="formHorizontalText">
+            <FormGroup className="addSagaFormContainer"  controlId="formHorizontalText">
               <Row>
-                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
+                <Col >
                   <label>What name/title would best describe your saga?</label>
                   <FormControl ref = {ref => this.title = ref} type="text" placeholder="Ex. The Remotest" defaultValue={saga.title} />
                 </Col>
               </Row>
             </FormGroup>
 
-            <FormGroup controlId="formHorizontalText">
+            <FormGroup className="addSagaFormContainer"  controlId="formHorizontalText">
               <Row>
-                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
+                <Col>
                   <label>Who were you with?</label>
                   <FormControl ref = {ref => this.people = ref} type="text" placeholder="Ex. Gabriel and Igor" defaultValue={saga.people}/>
                 </Col>
               </Row>
             </FormGroup>
 
-            <FormGroup controlId="formHorizontalText">
+            <FormGroup className="addSagaFormContainer"  controlId="formHorizontalText">
               <Row>
-                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
+                <Col>
                   <label>When?</label>
                   <FormControl ref = {ref => this.date = ref} type="date" placeholder="Ex. 11/24/2016" defaultValue={formatedDate}/>
                 </Col>
               </Row>
             </FormGroup>
 
-            <FormGroup controlId="formHorizontalText">
+            <FormGroup className="addSagaFormContainer"  controlId="formHorizontalText">
               <Row>
-                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
+                <Col>
                 <label>In what National Park or landmark?</label>
                   <FormControl ref = {ref => this.landmark = ref} type="text" placeholder="Ex. Getu" defaultValue={saga.landmark}/>
                 </Col>
               </Row>
             </FormGroup>
 
-            <FormGroup controlId="formHorizontalText">
+            <FormGroup className="addSagaFormContainer"  controlId="formHorizontalText">
               <Row>
-                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
+                <Col>
                   <label>In what State/Province?</label>
                   <FormControl ref = {ref => this.state = ref} type="text" placeholder="Ex. Getu" defaultValue={saga.state}/>
                 </Col>
               </Row>
             </FormGroup>
 
-            <FormGroup controlId="formHorizontalText">
+            <FormGroup className="addSagaFormContainer"  controlId="formHorizontalText">
               <Row>
-                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
+                <Col>
                   <label>In what country?</label>
                   <FormControl ref = {ref => this.country = ref} type="text" placeholder="Ex. China" defaultValue={saga.country}/>
                 </Col>
               </Row>
             </FormGroup>
 
-             <FormGroup controlId="formControlsTextarea">
+             <FormGroup className="addSagaFormContainer"  controlId="formControlsTextarea">
               <Row>
-                <Col xs ={12} sm={12} md={12} className="col-sm-offset-8 col-md-offset-7 col-lg-offset-7">
+                <Col>
                   <label>What happened?</label>
                   <FormControl ref = {ref => this.story = ref} componentClass="textarea" placeholder="Here is where you give a summary of your adventure of the whole story. It can be as short or long as you want!" defaultValue={ saga.story}/>
                 </Col>
               </Row>
           </FormGroup>
-          <FormGroup>
-          <Row>
-            <Col smOffset={10} sm={4} md={10} className="col-md-offset-8 col-lg-offset-8">
+          <div style={styleForButton}>
+            <Col className="addSagaFormContainer">
               {this.renderAlert()}
               <Button className="btn-warning btn-lg center-block" onClick = {this.handleClick}>
                 Add my saga
               </Button>
             </Col>
-            </Row>
-          </FormGroup>
+          </div>
         </Form>
       </div>
     );

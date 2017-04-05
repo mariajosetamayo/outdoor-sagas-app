@@ -187,8 +187,13 @@ padding-top: 6%;
   color: white !important;
 }
 
-.welcomeSection{
-  margin-top: 8%;
+
+.userHome{
+  position: absolute;
+  top: 40%;
+  margin-top: -200px;
+  left: 0;
+  width: 100%;
 }
 
 .sagaThumbnailSection{
@@ -205,7 +210,7 @@ padding-top: 6%;
 }
 
 .titleUserHome2{
-  padding-bottom: 5%;
+  /*padding-bottom: 5%;*/
 }
 
 /***** FORM TO ADD SAGA *******/
@@ -234,16 +239,18 @@ padding-top: 6%;
   margin-right: 15%;
 }
 
-.sagaContainer{
-  margin-top: 8%;
+
+.editBtn, .deleteBtn{
+  /*margin-left: 10%;*/
+  width: 100px;
 }
 
 .editBtn{
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .buttonSection{
-  margin-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 .storyText{
@@ -306,9 +313,7 @@ padding-top: 6%;
 
   /*USER HOME*/
 
-  .welcomeSection{
-    margin-top: 30%;
-  }
+
 
   /*ADD SAGA*/
 
@@ -318,9 +323,7 @@ padding-top: 6%;
     font-size: 50px;
   }
 
-  .addSagaForm{
-    margin-left: 6%;
-  }
+
 
   .form-group{
     width: 70%;
@@ -330,7 +333,6 @@ padding-top: 6%;
   /*SAGA DETAILS*/
 
   .sagaContainer{
-    margin-top: 50%;
     font-size: 17px;
   }
   .headingSagaDetail{
@@ -342,6 +344,11 @@ padding-top: 6%;
 
   .headingSagaDetail{
     font-size: 30px !important;
+  }
+
+  #thumbnail{
+    width: 244px;
+    height: 249px;
   }
 
   /*.sloganText{
@@ -400,9 +407,6 @@ padding-top: 6%;
 
   /*USER HOME*/
 
-  .welcomeSection{
-    margin-top: 30%;
-  }
 
   /*ADD SAGA*/
 
@@ -412,9 +416,7 @@ padding-top: 6%;
     /*font-size: 40px;*/
   }
 
-  .addSagaForm{
-    margin-left: 6%;
-  }
+
 
   .form-group{
     width: 70%;
@@ -422,9 +424,7 @@ padding-top: 6%;
 
   /*SAGA DETAILS*/
 
-  .sagaContainer{
-    margin-top: 40%;
-  }
+
 
   /*.sagaDetailSection{
     padding-top: 30% !important;
@@ -460,9 +460,7 @@ padding-top: 6%;
 
   /*USER HOME*/
 
-  .welcomeSection{
-    margin-top: 30%;
-  }
+
 
   /*ADD SAGA*/
 
@@ -472,9 +470,7 @@ padding-top: 6%;
 
   /*SAGA DETAILS*/
 
-  .sagaContainer{
-    margin-top: 30%;
-  }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
@@ -521,9 +517,7 @@ padding-top: 6%;
 
   /*USER HOME*/
 
-  .welcomeSection{
-    margin-top: 15%;
-  }
+
 
   /*ADD SAGA*/
 
@@ -532,15 +526,10 @@ padding-top: 6%;
     margin-left: 5%;
   }
 
-  .addSagaForm{
-    margin-left: 6%;
-  }
+
 
   /*SAGA DETAILS*/
 
-  .sagaContainer{
-    margin-top: 15% !important;
-  }
 
 }
 
@@ -622,6 +611,29 @@ padding-top: 6%;
   }
 
   hr{
+    width:85%;
     /*margin-top: -15px !important;
     margin-bottom: 4px !important;*/
+  }
+
+  .addSagaFormContainer{
+    text-align: -webkit-center;
+    margin: 0 auto !important;
+    width: 50% !important;
+  }
+
+  .styleForTitleAndImage{
+    text-align: -webkit-center;
+  }
+
+  .addSagaSection{
+    position: absolute;
+    top: 40%;
+    margin-top: -200px;
+    left: 0;
+    width: 100%;
+  }
+
+  .buttonSection{
+    margin: 0 auto;
   }

@@ -29,13 +29,14 @@ class UserHome extends Component{
         <Jumbotron className="welcomeSection">
           <h1 className='text-center' >Welcome back!</h1>
           <p className='text-center'>Did you have a new adventure? Add it by clicking on the button below.</p>
-          <div className="col-md-4 col-md-offset-4 text-center">
+          <div>
             <Link to = {'/add-saga'}>
               <p><Button bsStyle="warning" bsSize="large">Add a new Saga</Button></p>
             </Link>
           </div>
         </Jumbotron>
         <br/>
+        <hr className="featurette-divider"  />
         <div>
           <div className="row-fluid featurette sagasAroundWorld">
             <h1 className="text-center"> Your sagas around the world</h1>
