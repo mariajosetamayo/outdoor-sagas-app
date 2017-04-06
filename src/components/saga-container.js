@@ -50,7 +50,7 @@ class SagaContainer extends Component{
       width: '100%'
     }
     return(
-      <div style={mainDivStyles}>
+      <div style={mainDivStyles} className="sagaDetailsDiv">
         <div><SagaDetail type="sagaDetail" id= {this.props.params.id} selectedSaga= {this.props.saga} authenticated= {this.props.authenticated} story={this.props.story}/></div>
         <div>
           {this.renderButtons()}

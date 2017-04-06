@@ -67,14 +67,14 @@ import Footer from '../components/footer';
                 <div style={instructionsDivStyle} className="instructionsDiv">
                   <p><span className = "fa-stack"><i className="fa fa-circle-o fa-stack-2x"></i><strong className = "fa-stack-1x">1</strong></span><span style={instructionsText}>Join Outdoor Sagas.</span></p>
                   <p><span className = "fa-stack"><i className="fa fa-circle-o fa-stack-2x"></i><strong className = "fa-stack-1x">2</strong></span><span style={instructionsText}>Create a new saga and save it.</span></p>
-                  <p><span className = "fa-stack"><i className="fa fa-circle-o fa-stack-2x"></i><strong className = "fa-stack-1x">3</strong></span><span style={instructionsText}>Consult sagas of other adventurers.</span></p>
+                  <p><span className = "fa-stack"><i className="fa fa-circle-o fa-stack-2x"></i><strong className = "fa-stack-1x">3</strong></span><span style={instructionsText}>Consult sagas of other adventurers<Scrollchor to="#userSagas" animate={{duration: 1000}}>    here</Scrollchor></span></p>
                 </div>
               </div>
               <div className= "jumbotron vertical-center sagaSection">
                 <hr className="featurette-divider"  />
                 <div className="row featurette">
                   <h1 className="title1Home featurette-heading text-center" id="title1Home" style={homeTextSize} > Adventures around the world</h1>
-                <div><SagaList correctSagas={this.props.sagas}/></div>
+                <div id="userSagas"><SagaList correctSagas={this.props.sagas}/></div>
               </div>
             </div>
             <Footer className="footer"/>

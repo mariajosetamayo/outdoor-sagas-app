@@ -88,7 +88,7 @@ class NewSagaForm extends Component {
       <div className="jumbotron addSagaSection">
         <div className="styleForTitleAndImage">
           <Col>
-            <h1 className=" text-center">Saga telling space</h1>
+            <h1 className="text-center">Saga telling space</h1>
             <br/>
             <br/>
           </Col>
