@@ -56,7 +56,7 @@ export default class SagaList extends Component {
         <div className="mapAllLocations" className= "iframe-container col-centered" >
           <GoogleMapAllLocations correctSagas={this.props.correctSagas} />
         </div>
-        <hr className="featurette-divider"  />
+        <hr id="userSagas" className="featurette-divider"  />
         {this.renderTitleForSagas()}
         <div className="container sagaThumbnailsContainer">
             <div className="row">
